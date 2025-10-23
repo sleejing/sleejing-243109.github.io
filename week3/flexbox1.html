@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -15,6 +18,7 @@
             display: flex;
             margin: 50px;
             gap: 20px;
+            justify-content: center;
         }
 
         .boss div {
@@ -27,6 +31,18 @@
             width: 100%;
             border-radius: 10px;
         }
+
+        .boss div h1 {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 30px;
+        }
+
+        .boss div p {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 18px;
+
+
+        }
     </style>
 </head>
 
@@ -34,14 +50,20 @@
     <div class="boss">
         <div class="residential">
             <img src="images/01.jpeg" alt="residential">
+            <h1>Residential project</h1>
+            <p>We build sustainable and modern homes for comfortable living.</p>
         </div>
 
         <div class="commercial">
             <img src="images/02.jpeg" alt="commercial">
+            <h1>Commercial spaces</h1>
+            <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
         </div>
 
         <div class="infrastructure">
             <img src="images/03.jpeg" alt="landscape">
+            <h1>Infrastructure works</h1>
+            <p>We develop strong, reliable infrastructure for growing communities.</p>
         </div>
     </div>
 
