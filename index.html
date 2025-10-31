@@ -4,43 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        .socialmedia {
+            justify-content: center;
+        }
+
+        .socialmedia img {
+            width: 30px;
+        }
+
+        .me {
+            margin: 15px 0px;
+            text-align: center;
+        }
+
+        .profilephoto img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px 50px;
+        }
+
+        .link-box {
+            background-color: rgb(170, 123, 123);
+            border-radius: 15px;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .footer {
+            background-color: brown;
+            text-align: center;
+            margin: 5px 0px;
+        }
+
+        .socialmedia2 img {
+            width: 30px;
+        }
+
+        .socialmedia2 p {
+            margin-top: 3px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to My Website</h1>
-    <h2>Welcome to My Website</h2>
-    <h3>Welcome to My Website</h3>
-    <h4>Welcome to My Website</h4>
-    <h5>Welcome to My Website</h5>
-    <h6>Welcome to My Website</h6>
-    <p>Hiiiii, I'm Lee Jing..yoyoyoyoyyoyoyoyo</p>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="about.html">About Me</a>
-    <a href="https://www.google.com">google</a>
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <img src="BB4B2747-AE54-4C31-97F3-04A5AB13990B.jpeg" alt="A description of the image" width="300" height="300">
-    <button onclick="alert('Hello, welcome to my website!')">Click Me!</button>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="images/S logo.png" alt="logo"></div>
+            <div class="socialmedia"><a href="https://www.instagram.com/seow._.ww/" target="_blank"><img
+                        src="images/insta.png" alt="instagram-link"></a>
+                <a href="https://www.douyin.com/user/self?from_tab_name=main&showTab=post" target="_blank"><img
+                        src="images/douying.png" alt="douyin-link"></a>
+                <a href="https://www.facebook.com/leejing.seow/" target="_blank"><img src="images/facebook.png"
+                        alt="facebook-link"></a>
+            </div>
+        </div>
 
+        <div class="me">
+            <div class="profilephoto"><img src="images/Me.jpg" alt="me">
+            </div>
+            <h1>Seow Lee Jing</h1>
+            <h2>Web Publishing</h2>
+            <p>Hi, I'm Lee Jing — a web publishing student who loves simple design and cozy vibes!!</p>
+        </div>
+
+        <div class="link-grid">
+            <div class="link-box">
+                <h3>Week 2</h3>
+            </div>
+            <div class="link-box">
+                <h3>Week 3</h3>
+            </div>
+            <div class="link-box">
+                <h3>Week 4</h3>
+            </div>
+            <div class="link-box full-width">
+                <h3>Week 5</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="socialmedia2"><a href="https://www.instagram.com/seow._.ww/" target="_blank"><img
+                        src="images/insta.png" alt="instagram-link"></a>
+                <a href="https://www.douyin.com/user/self?from_tab_name=main&showTab=post" target="_blank"><img
+                        src="images/douying.png" alt="douyin-link"></a>
+                <a href="https://www.facebook.com/leejing.seow/" target="_blank"><img src="images/facebook.png"
+                        alt="facebook-link"></a>
+                <p>2025 Seow Lee Jing.All right reserved.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
