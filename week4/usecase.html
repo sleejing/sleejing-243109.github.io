@@ -57,17 +57,18 @@
             border: 1px solid #191A23;
             border-radius: 5px;
             padding: 14px 25px;
-            font-family: 'space grotesk';
+            font-family: 'space grotesk', sans-serif;
             font-size: 18px;
         }
 
         .hamburger2 {
             align-items: center;
+            display: none;
         }
 
         .title {
             margin: 30px 0px;
-            padding: 40px 60px;
+            padding: 40px 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -77,10 +78,6 @@
 
         .title img {
             width: 500px;
-        }
-
-        .rightword {
-            margin-left: 80px;
 
         }
 
@@ -154,7 +151,6 @@
             display: grid;
             grid-template-columns: 250px auto;
             gap: 20px;
-
         }
 
         .card {
@@ -169,6 +165,159 @@
         .card h3 {
             font-size: 30px;
             margin: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 1350px) {
+            .title img {
+                width: 400px;
+            }
+
+            .rightword h1 {
+                font-size: 45px;
+            }
+
+            .rightword p {
+                font-size: 16px;
+                max-width: 400px;
+            }
+
+
+            .content-left h1 {
+                font-size: 24px;
+
+            }
+
+            .content-left h2 {
+                font-size: 22px;
+                max-width: 350px;
+            }
+
+            .content-left p {
+                font-size: 14px;
+                max-width: 400px;
+            }
+
+            .readbutton img {
+                width: 30px;
+            }
+
+            .readbutton a {
+                font-size: 16px;
+            }
+
+            .content-right {
+                display: grid;
+                grid-template-columns: 200px 200px;
+                gap: 40px;
+            }
+
+            .card h3 {
+                font-size: 26px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 1120px) {
+            .hamburger2 {
+                display: block;
+            }
+
+            .right-nav a {
+                display: none;
+            }
+
+            .right-nav button {
+                display: none;
+            }
+
+            .positivus img {
+                width: 120px;
+            }
+
+            .title {
+                padding: 20px 30px;
+            }
+
+            .title img {
+                width: 280px;
+            }
+
+            .rightword {
+                margin: 0px 10px;
+            }
+
+            .rightword h1 {
+                font-size: 32px;
+            }
+
+            .rightword p {
+                font-size: 13px;
+            }
+
+            .content {
+                padding: 30px 40px;
+            }
+
+            .content-left h1 {
+                font-size: 18px;
+                padding: 4px 10px;
+            }
+
+            .content-left h2 {
+                font-size: 16px;
+                max-width: 320px;
+            }
+
+            .content-left p {
+                font-size: 12px;
+                max-width: 350px;
+            }
+
+            .readbutton {
+                margin: 20px 0;
+            }
+
+            .readbutton img {
+                width: 20px;
+            }
+
+            .readbutton a {
+                font-size: 12px;
+            }
+
+            .content-right {
+                display: grid;
+                grid-template-columns: 130px 130px;
+                justify-content: right;
+            }
+
+            .card {
+                width: 130px;
+                background-color: #F3F3F3;
+                color: #191A23;
+                border-radius: 16px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 15px;
+            }
+
+            .card h3 {
+                font-size: 18px;
+            }
+
+            .card p {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
