@@ -11,7 +11,7 @@
 
     <style>
         .container {
-            font-family: 'space grotesk', sans-serif;
+            font-family: 'Oxygen', sans-serif;
             color: rgb(26, 61, 100);
             background-image: url(images/background.jpeg);
             background-size: cover;
@@ -29,7 +29,8 @@
         }
 
         .socialmedia {
-            justify-content: center;
+            display: flex;
+            gap: 15px;
         }
 
         .socialmedia img {
@@ -47,18 +48,20 @@
         }
 
         .box {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            display: flex;
+            justify-content: space-around;
             padding: 20px 50px;
+            gap: 20px;
         }
 
         .link-box {
             background-color: transparent;
+            border: 2px solid rgb(12, 43, 78);
+            width: 400px;
             border-radius: 15px;
             padding: 50px 20px;
             text-align: center;
-            border: 2px solid rgb(12, 43, 78);
+
         }
 
         .link-box h3 {
@@ -71,8 +74,11 @@
             display: inline-block;
         }
 
+        .box2 {
+            padding: 10px 75px;
+        }
+
         .full-width {
-            grid-column: 1 / -1;
             background-color: transparent;
             border-radius: 15px;
             padding: 50px 20px;
@@ -144,21 +150,24 @@
                 <a href="week4/menu.html" target="_blank">Exercise 1</a><br>
                 <a href="week4/usecase.html" target="_blank">Exercise 2</a><br>
             </div>
+        </div>
+        <div class="box2">
             <div class="full-width">
                 <h3>Week 5</h3>
             </div>
         </div>
+    </div>
 
-        <div class="footer">
-            <div class="socialmedia2"><a href="https://www.instagram.com/seow._.ww/" target="_blank"><img
-                        src="images/insta.png" alt="instagram-link"></a>
-                <a href="https://www.douyin.com/user/self?from_tab_name=main&showTab=post" target="_blank"><img
-                        src="images/douying.png" alt="douyin-link"></a>
-                <a href="https://www.facebook.com/leejing.seow/" target="_blank"><img src="images/facebook.png"
-                        alt="facebook-link"></a>
-                <p>2025 Seow Lee Jing.All right reserved.</p>
-            </div>
+    <div class="footer">
+        <div class="socialmedia2"><a href="https://www.instagram.com/seow._.ww/" target="_blank"><img
+                    src="images/insta.png" alt="instagram-link"></a>
+            <a href="https://www.douyin.com/user/self?from_tab_name=main&showTab=post" target="_blank"><img
+                    src="images/douying.png" alt="douyin-link"></a>
+            <a href="https://www.facebook.com/leejing.seow/" target="_blank"><img src="images/facebook.png"
+                    alt="facebook-link"></a>
+            <p>2025 Seow Lee Jing.All right reserved.</p>
         </div>
+    </div>
     </div>
 </body>
 
