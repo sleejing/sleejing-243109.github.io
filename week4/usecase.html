@@ -67,13 +67,17 @@
         }
 
         .title {
-            margin: 30px 0px;
+            margin: 10px 0px;
             padding: 40px 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #F3F3F3;
             border-radius: 20px;
+        }
+
+        .smalltitle {
+            display: none;
         }
 
         .title img {
@@ -91,6 +95,10 @@
             line-height: 1.5;
             letter-spacing: 0.4px;
             max-width: 450px;
+        }
+
+        .diamond img {
+            display: none;
         }
 
         .content {
@@ -169,6 +177,10 @@
 
         .card p {
             font-size: 14px;
+        }
+
+        .lowread {
+            display: none;
         }
 
         @media (max-width: 1350px) {
@@ -319,6 +331,112 @@
                 font-size: 10px;
             }
         }
+
+        @media (max-width: 770px) {
+            .boss {
+                padding: 0px 10px;
+            }
+
+            .smalltitle {
+                display: block;
+                font-size: 20px;
+            }
+
+            .title {
+                flex-direction: column;
+                padding: 0px 10px;
+                background-color: #ffffff;
+            }
+
+            .title img {
+                width: 400px;
+                max-width: fit-content;
+            }
+
+            .rightword h1 {
+                display: none;
+            }
+
+            .rightword p {
+                font-size: 14px;
+                max-width: fit-content;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .content-left h1 {
+                font-size: 20px;
+                text-align: end;
+                background: none;
+                color: #B9FF66;
+            }
+
+            .content-left h2 {
+                font-size: 18px;
+                text-align: left;
+                padding-left: 70px;
+            }
+
+            .content-left p {
+                font-size: 13px;
+                max-width: none;
+                padding-left: 70px;
+            }
+
+            .readbutton {
+                display: none;
+            }
+
+            .lowread {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .lowread img {
+                width: 25px
+            }
+
+            .lowread a {
+                font-size: 18px;
+                color: #B9FF66;
+                text-decoration: none;
+            }
+
+            .content-right {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 150px;
+            }
+
+            .card {
+                padding: 30px 50px;
+            }
+
+            .card h3 {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 12px;
+            }
+
+            .positivus img {
+                width: 100px;
+            }
+
+            .hamburger2 img {
+                width: 24px;
+            }
+
+            .diamond img {
+                display: block;
+                width: 50px;
+            }
+        }
     </style>
 </head>
 
@@ -344,6 +462,9 @@
         </div>
 
         <div class="title">
+            <div class="smalltitle">
+                <h1>Proven Success Stories</h1>
+            </div>
             <div class="iconimage"><img src="images/iconimage01-01.png" alt="iconimage"></div>
             <div class="rightword">
                 <h1>Proven Success Stories</h1>
@@ -354,6 +475,7 @@
         </div>
         <div class="content">
             <div class="content-left">
+                <div class="diamond"><img src="images/diamond.png" alt="diamond"></div>
                 <h1>Featured Success Story</h1>
                 <h2>Scaling Success for a Leading E-Commerce Brand</h2>
                 <p>
@@ -382,6 +504,10 @@
                 <div class="card">
                     <h3>300%</h3>
                     <p>improvement in conversion rate</p>
+                </div>
+                <div class="lowread">
+                    <img src="images/readbutton.png" alt="readbutton">
+                    <a href="#">Read</a>
                 </div>
             </div>
         </div>
