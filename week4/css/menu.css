@@ -1,0 +1,82 @@
+body {
+    background-color: #f6f5ef;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.boss {
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boss div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 220px;
+}
+
+.hamburger img {
+    display: none;
+}
+
+.homes a {
+    text-decoration: none;
+    color: black;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.active a {
+    color: rgba(249, 97, 43);
+
+}
+
+.contact {
+    font-size: 14px;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.contact img {
+    width: 20px
+}
+
+.contact div button {
+    background-color: rgba(249, 97, 43);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px 8px;
+}
+
+@media (max-width: 900px) {
+    .hamburger img {
+        display: block;
+    }
+
+    .homes a {
+        display: none;
+    }
+
+    .contact div button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact img[alt="phoneicon"] {
+        display: none;
+    }
+
+    .contact p {
+        display: none;
+    }
+}

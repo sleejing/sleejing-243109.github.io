@@ -1,0 +1,442 @@
+body {
+    background-color: white;
+    font-family: 'space grotesk', sans-serif;
+}
+
+.boss {
+    padding: 0 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.positivus img {
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-nav {
+    display: flex;
+    font-size: 18px;
+    gap: 30px;
+    align-items: center;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: #191A23;
+
+}
+
+.right-nav button {
+    background-color: transparent;
+    color: #191A23;
+    border: 1px solid #191A23;
+    border-radius: 5px;
+    padding: 14px 25px;
+    font-family: 'space grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.hamburger2 {
+    align-items: center;
+    display: none;
+}
+
+.title {
+    margin: 10px 0px;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+}
+
+.smalltitle {
+    display: none;
+}
+
+.illus img {
+    width: 500px;
+
+}
+
+.rightword h1 {
+    font-size: 60px;
+    max-width: 500px;
+}
+
+.rightword p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    max-width: 450px;
+}
+
+.diamond img {
+    display: none;
+}
+
+.content {
+    background-color: #191A23;
+    color: #F3F3F3;
+    border-radius: 20px;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.content-left h1 {
+    background-color: #B9FF66;
+    color: #191A23;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content-left h2 {
+    font-size: 28px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.content-left p {
+    color: #F3F3F3;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.readbutton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0px;
+}
+
+.readbutton img {
+    width: 36px;
+}
+
+.readbutton a {
+    text-decoration: none;
+    color: #B9FF66;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content-right {
+    display: grid;
+    grid-template-columns: 250px auto;
+    gap: 20px;
+}
+
+.card {
+    background-color: #F3F3F3;
+    color: #191A23;
+    border-radius: 16px;
+    text-align: center;
+    padding: 24px;
+    width: 180px;
+}
+
+.card h3 {
+    font-size: 30px;
+    margin: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.lowread {
+    display: none;
+}
+
+.content-left div h1 {
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    .illus img {
+        width: 400px;
+    }
+
+    .rightword h1 {
+        font-size: 45px;
+    }
+
+    .rightword p {
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+
+    .content-left h1 {
+        font-size: 24px;
+
+    }
+
+    .content-left h2 {
+        font-size: 22px;
+        max-width: 350px;
+    }
+
+    .content-left p {
+        font-size: 14px;
+        max-width: 400px;
+    }
+
+    .readbutton img {
+        width: 30px;
+    }
+
+    .readbutton a {
+        font-size: 16px;
+    }
+
+    .content-right {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        gap: 40px;
+    }
+
+    .card h3 {
+        font-size: 26px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .hamburger2 {
+        display: block;
+    }
+
+    .right-nav a {
+        display: none;
+    }
+
+    .right-nav button {
+        display: none;
+    }
+
+    .positivus img {
+        width: 120px;
+    }
+
+    .title {
+        padding: 20px 30px;
+    }
+
+    .illus img {
+        width: 280px;
+    }
+
+    .rightword {
+        margin: 0px 10px;
+    }
+
+    .rightword h1 {
+        font-size: 32px;
+    }
+
+    .rightword p {
+        font-size: 13px;
+    }
+
+    .content {
+        padding: 30px 40px;
+    }
+
+    .content-left h1 {
+        font-size: 18px;
+        padding: 4px 10px;
+    }
+
+    .content-left h2 {
+        font-size: 16px;
+        max-width: 320px;
+    }
+
+    .content-left p {
+        font-size: 12px;
+        max-width: 350px;
+    }
+
+    .readbutton {
+        margin: 20px 0;
+    }
+
+    .readbutton img {
+        width: 20px;
+    }
+
+    .readbutton a {
+        font-size: 12px;
+    }
+
+    .content-right {
+        display: grid;
+        grid-template-columns: 130px 130px;
+        justify-content: right;
+    }
+
+    .card {
+        width: 130px;
+        background-color: #F3F3F3;
+        color: #191A23;
+        border-radius: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .boss {
+        padding: 0px 10px;
+    }
+
+    .smalltitle {
+        display: block;
+        font-size: 20px;
+    }
+
+    .title {
+        flex-direction: column;
+        padding: 0px 10px;
+        background-color: #ffffff;
+    }
+
+    .illus img {
+        width: 400px;
+        max-width: fit-content;
+    }
+
+    .rightword h1 {
+        display: none;
+    }
+
+    .rightword p {
+        font-size: 14px;
+        max-width: fit-content;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left h1 {
+        display: none;
+    }
+
+    .content-left div h1 {
+        font-size: 20px;
+        background: none;
+        color: #B9FF66;
+        ;
+    }
+
+    .diamond {
+        display: flex;
+        align-items: center;
+    }
+
+    .content-left h2 {
+        font-size: 24px;
+        justify-content: flex-end;
+    }
+
+    .content-left p {
+        font-size: 13px;
+        text-align: justify;
+        justify-content: flex-end;
+
+    }
+
+    .readbutton {
+        display: none;
+    }
+
+    .lowread {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lowread img {
+        width: 25px
+    }
+
+    .lowread a {
+        font-size: 18px;
+        color: #B9FF66;
+        text-decoration: none;
+    }
+
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 150px;
+    }
+
+    .card {
+        padding: 30px 50px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .positivus img {
+        width: 100px;
+    }
+
+    .hamburger2 img {
+        width: 24px;
+    }
+
+    .diamond img {
+        display: block;
+        width: 60px;
+    }
+
+    .content-left div h1 {
+        display: block;
+    }
+}

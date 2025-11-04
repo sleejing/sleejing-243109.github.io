@@ -1,0 +1,146 @@
+.container {
+    font-family: 'Oxygen', sans-serif;
+    color: rgb(26, 61, 100);
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgb(29, 84, 108);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.me {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.profilephoto img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 20px;
+}
+
+.link-box {
+    background-color: transparent;
+    border: 2px solid rgb(12, 43, 78);
+    width: 33.33%;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+
+}
+
+.link-box h3 {
+
+    text-align: center;
+}
+
+.link-box a {
+    text-decoration: none;
+    line-height: 2;
+    display: inline-block;
+}
+
+.box2 {
+    padding: 10px 50px;
+}
+
+.full-width {
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 2px solid rgb(12, 43, 78);
+}
+
+.full-width h3 {
+    text-align: center;
+}
+
+.full-width a {
+    line-height: 2;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: rgb(29, 84, 108);
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.footer p {
+    color: rgb(244, 244, 244);
+    font-size: small;
+}
+
+.socialmedia2 img {
+    width: 30px;
+}
+
+.socialmedia2 p {
+    margin-top: 3px;
+}
+
+@media (max-width: 660px) {
+    .me h1 {
+        font-size: 25px;
+    }
+
+    .me h2 {
+        font-size: 17px;
+    }
+
+    .me p {
+        font-size: 13px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .link-box {
+        width: 80%;
+    }
+
+    .link-box h3 {
+        font-size: 17px;
+    }
+
+    .link-box a {
+        font-size: 13px;
+    }
+
+    .full-width {
+        width: 80%;
+    }
+
+    .full-width h3 {
+        font-size: 17px;
+    }
+
+    .full-width a {
+        font-size: 13px;
+    }
+}
