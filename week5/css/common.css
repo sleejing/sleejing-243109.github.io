@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    font-family: 'space grotesk', sans-serif;
+}
+
+.boss {
+    padding: 0 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.positivus img {
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-nav {
+    display: flex;
+    font-size: 18px;
+    gap: 30px;
+    align-items: center;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: #191A23;
+
+}
+
+.right-nav button {
+    background-color: transparent;
+    color: #191A23;
+    border: 1px solid #191A23;
+    border-radius: 5px;
+    padding: 14px 25px;
+    font-family: 'space grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.hamburger2 {
+    align-items: center;
+    display: none;
+}
