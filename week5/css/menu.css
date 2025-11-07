@@ -64,8 +64,53 @@
     width: 10%;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1350px) {
+    .positivus img {
+        width: 60%;
+    }
+
+    .right-nav {
+        font-size: 13px;
+    }
+
+    .right-nav button {
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+
     .title {
         padding: 60px 10px;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .text h1 {
+        font-size: 35px;
+        width: 80%;
+    }
+
+    .text p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .loudspeaker {
+        width: 50%;
+    }
+
+
+    .loudspeaker img {
+        width: 80%;
+    }
+
+    .brandlogo img {
+        width: 10%;
+    }
+
+    .book-button button {
+        padding: 10px 25px;
+        font-size: 14px;
     }
 }
