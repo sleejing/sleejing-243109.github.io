@@ -47,7 +47,30 @@ body {
     font-size: 18px;
 }
 
-.hamburger2 {
-    align-items: center;
+.hamburger2 img {
     display: none;
+}
+
+@media (max-width: 1350px) {
+    .hamburger2 img {
+        display: block;
+    }
+
+    .right-nav a {
+        display: none;
+    }
+
+    .right-nav button {
+        display: none;
+    }
+}
+
+@media(max-width:770px) {
+    .hamburger2 img {
+        width: 80%;
+    }
+
+    .positivus img {
+        width: 70%;
+    }
 }

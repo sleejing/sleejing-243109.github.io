@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 20px;
+    margin: 30px 70px;
     gap: 10%;
 }
 
@@ -12,16 +12,12 @@
     align-items: flex-start;
 }
 
-.text img {
-    display: none;
-}
-
 .text h1 {
     font-size: 50px;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 15px;
-    width: 80%;
+    width: 50%;
 }
 
 .text p {
@@ -33,14 +29,17 @@
     font-weight: 100;
 }
 
+.smallscreen img {
+    display: none;
+}
+
 .loudspeaker {
     display: flex;
     justify-content: center;
-    width: 50%;
 }
 
 .loudspeaker img {
-    width: auto;
+    width: 500px;
 }
 
 .book-button button {
@@ -57,7 +56,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin: 30px 70px;
+    padding: 10px
 }
 
 .brandlogo img {
@@ -65,21 +65,8 @@
 }
 
 @media (max-width: 1350px) {
-    .positivus img {
-        width: 60%;
-    }
-
-    .right-nav {
-        font-size: 13px;
-    }
-
-    .right-nav button {
-        font-size: 13px;
-        padding: 12px 20px;
-    }
-
     .title {
-        padding: 60px 10px;
+        margin: 30px 70px;
     }
 
     .text {
@@ -97,12 +84,38 @@
     }
 
     .loudspeaker {
-        width: 50%;
+        width: 400px;
     }
-
 
     .loudspeaker img {
         width: 80%;
+    }
+
+    .brandlogo img {
+        width: 10%;
+    }
+
+    .book-button button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .positivus img {
+        width: 70%;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .loudspeaker img {
+        width: 300px;
     }
 
     .brandlogo img {

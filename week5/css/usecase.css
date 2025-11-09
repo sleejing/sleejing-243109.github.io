@@ -97,18 +97,19 @@
     background-color: #F3F3F3;
     color: #191A23;
     border-radius: 16px;
-    text-align: center;
-    padding: 24px;
+    padding: 20px;
     width: 180px;
+    aspect-ratio: 1/1;
 }
 
 .card h3 {
     font-size: 30px;
-    margin: 8px;
+    text-align: center;
 }
 
 .card p {
     font-size: 14px;
+    text-align: center;
 }
 
 .lowread {
@@ -173,18 +174,6 @@
 }
 
 @media (max-width: 1120px) {
-    .hamburger2 {
-        display: block;
-    }
-
-    .right-nav a {
-        display: none;
-    }
-
-    .right-nav button {
-        display: none;
-    }
-
     .positivus img {
         width: 120px;
     }
