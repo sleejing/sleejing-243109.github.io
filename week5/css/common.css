@@ -34,7 +34,10 @@ body {
 .right-nav a {
     text-decoration: none;
     color: #191A23;
+}
 
+.active a:hover {
+    color: #B9FF66
 }
 
 .right-nav button {
