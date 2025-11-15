@@ -8,9 +8,38 @@
     width: 300px;
     border-radius: 20px;
     padding: 25px;
+    position: relative;
 }
 
 .bali img {
     width: 100%;
     border-radius: 20px;
+}
+
+.content p {
+    font-size: 15px;
+    color: #726c6c;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon img {
+    width: 20px;
+}
+
+.going {
+    display: flex;
+    gap: 10px;
+    color: #726c6c;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.going img {
+    width: 20px;
 }
