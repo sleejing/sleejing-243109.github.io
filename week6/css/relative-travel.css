@@ -54,3 +54,61 @@
 .going-right img {
     width: 20px;
 }
+
+.small-card {
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 15px;
+    background-color: white;
+    width: 70%;
+    position: absolute;
+    right: -80px;
+    bottom: -40px;
+    padding: 15px 15px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text h4 {
+    font-size: small;
+    font-weight: 100;
+    color: #726c6c;
+    margin: 0;
+}
+
+.text p {
+    font-size: large;
+    font-weight: bold;
+    margin: 7px 0px;
+}
+
+.small-card img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.progress {
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.progress p {
+    margin: 2px;
+}
+
+.completed {
+    border: 1px solid #c1bebe;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #e5e1e1;
+}
+
+.completedfill {
+    width: 60%;
+    height: 100%;
+    background-color: #34bc39;
+    border-radius: 5px;
+}
