@@ -1,6 +1,7 @@
 .boss {
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 .container01 {
@@ -128,4 +129,50 @@
     height: 100%;
     background-color: #34bc39;
     border-radius: 5px;
+}
+
+@media(max-width:1110px) {
+    .container01 {
+        width: 25%;
+        padding: 25px;
+        margin: 20px 50px;
+    }
+
+    .container02 {
+        width: 25%;
+        padding: 25px;
+        position: relative;
+    }
+}
+
+@media(max-width:980px) {
+
+    .small-card img {
+        width: 20%;
+    }
+
+    .text p {
+        font-size: medium;
+    }
+
+    .progress {
+        font-size: smaller;
+    }
+}
+
+@media(max-width:880px) {
+    .boss {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container01 {
+        width: 60%;
+    }
+
+    .container02 {
+        width: 60%;
+        margin: 0;
+    }
 }
