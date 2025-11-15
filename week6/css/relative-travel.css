@@ -33,6 +33,7 @@
 
 .going {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     color: #726c6c;
     font-size: 15px;
@@ -40,6 +41,16 @@
     margin-top: 15px;
 }
 
-.going img {
+.going-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.going-left img {
+    width: 20px;
+}
+
+.going-right img {
     width: 20px;
 }
