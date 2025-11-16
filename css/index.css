@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .container {
     font-family: 'Oxygen', sans-serif;
     color: rgb(26, 61, 100);
@@ -48,13 +52,13 @@
     border: 2px solid rgb(12, 43, 78);
     width: 33.33%;
     border-radius: 15px;
-    padding: 30px 20px;
+    padding: 10px 20px;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .link-box h3 {
-
     text-align: center;
 }
 
@@ -67,17 +71,19 @@
 .box2 {
     display: flex;
     justify-content: center;
-    padding: 0px 50px;
+    padding: 20px 50px;
     gap: 20px;
 }
 
 .full-width {
     background-color: transparent;
-    border-radius: 15px;
-    width: 50%;
-    padding: 40px 20px;
-    text-align: center;
     border: 2px solid rgb(12, 43, 78);
+    width: 33.33%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .full-width h3 {
@@ -87,12 +93,13 @@
 .full-width a {
     line-height: 2;
     text-decoration: none;
+    display: inline-block;
 }
 
 .footer {
     background-color: rgb(29, 84, 108);
     text-align: center;
-    margin: 10px 0px;
+    margin: 0;
 }
 
 .footer p {
@@ -128,6 +135,7 @@
 
     .link-box {
         width: 80%;
+        min-height: 150px;
     }
 
     .link-box h3 {
@@ -140,6 +148,7 @@
 
     .full-width {
         width: 80%;
+        min-height: 150px;
     }
 
     .box2 {
