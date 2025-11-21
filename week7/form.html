@@ -17,7 +17,10 @@
         .container {
             background: white;
             border-radius: 15px;
-            width: fit-content;
+            width: 60%;
+        }
+
+        .title {
             padding: 35px;
         }
 
@@ -82,78 +85,115 @@
             font-size: 14px;
             border: none;
         }
+
+        .full-form {
+            grid-column: span 2;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e8eefb;
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+
+        .bottom h1 {
+            font-size: 25px;
+        }
+
+        .bottom h2 {
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .bottom p {
+            font-size: 12px;
+            color: #a2a2a5;
+        }
+
+        .bottom button {
+            padding: 15px 50px;
+            border: none;
+            border-radius: 30px;
+            background-color: #d0d0d2;
+            color: white;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="button1">
-            <button class="oneplayer">one player</button>
-            <button class="siblings">siblings</button>
-        </div>
-
-        <h1>Registration Form - Middle School</h1>
-
-        <div class="button2">
-            <button class="player1">player 1</button>
-            <button class="player2">player 2</button>
-        </div>
-
-        <form action="/action_page.php">
-            <div class="form-container">
-                <div class="form">
-                    <label for="fname">First name*</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                </div>
-
-                <div class="form">
-                    <label for="lname">Last name*</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                </div>
-
-                <div class="form">
-                    <label for="glevel">Grade level*</label><br>
-                    <input type="text" id="glevel" name="glevel"><br>
-                </div>
-
-                <div class="form">
-                    <label for="sattending">School attending*</label><br>
-                    <input type="text" id="sattending" name="sattending"><br>
-                </div>
-
-                <div class="form">
-                    <label for="skilllevel">Skill level*</label><br>
-                    <input type="text" id="skilllevel" name="skilllevel"><br>
-                </div>
-
-                <div class="form">
-                    <label for="size">T-shirt size*</label><br>
-                    <input type="text" id="size" name="size"><br>
-                </div>
-
-                <div class="form">
-                    <label for="email">Email*</label><br>
-                    <input type="text" id="email" name="email"><br>
-                </div>
-
-                <div class="form">
-                    <label for="confirm">Confirm email*</label><br>
-                    <input type="text" id="confirm" name="confirm"><br>
-                </div>
-
-                <div class="form">
-                    <label for="pnumber">Guardian's phone number*</label><br>
-                    <input type="text" id="pnumber" name="pnumber"><br>
-                </div>
+        <div class="title">
+            <div class="button1">
+                <button class="oneplayer">one player</button>
+                <button class="siblings">siblings</button>
             </div>
-        </form>
+
+            <h1>Registration Form - Middle School</h1>
+
+            <div class="button2">
+                <button class="player1">player 1</button>
+                <button class="player2">player 2</button>
+            </div>
+
+            <form action="/action_page.php">
+                <div class="form-container">
+                    <div class="form">
+                        <label for="fname">First name*</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="lname">Last name*</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="glevel">Grade level*</label><br>
+                        <input type="text" id="glevel" name="glevel"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="sattending">School attending*</label><br>
+                        <input type="text" id="sattending" name="sattending"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="skilllevel">Skill level*</label><br>
+                        <input type="text" id="skilllevel" name="skilllevel"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="size">T-shirt size*</label><br>
+                        <input type="text" id="size" name="size"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="email">Email*</label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </div>
+
+                    <div class="form">
+                        <label for="confirm">Confirm email*</label><br>
+                        <input type="text" id="confirm" name="confirm"><br>
+                    </div>
+
+                    <div class="form full-form">
+                        <label for="pnumber">Guardian's phone number*</label><br>
+                        <input type="text" id="pnumber" name="pnumber"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
 
         <div class="bottom">
             <div class="leftside">
-                <p>Price: $380 $360 ($20 off for siblings)</p>
-                <p>Payment instruction will be sent by confirmation email</p>
-                <p>By clicking the Submit button you agree to our Privacy Policy Terms</p>
+                <h1>Price: $380 $360 ($20 off for siblings)</h1>
+                <h2>Payment instruction will be sent by confirmation email<h2>
+                        <p>By clicking the Submit button you agree to our Privacy Policy Terms</p>
             </div>
             <div class="rightside">
                 <button>Next player →</button>
