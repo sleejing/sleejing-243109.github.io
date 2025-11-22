@@ -26,38 +26,32 @@
             <form action="/action_page.php">
                 <div class="form-container">
                     <div class="form">
-                        <label for="fname">First name*</label><br>
-                        <input type="text" id="fname" name="fname"><br>
+                        <input type="text" id="fname" name="fname" placeholder="First name*"><br>
                     </div>
 
                     <div class="form">
-                        <label for="lname">Last name*</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name*"><br>
+                    </div>
+
+                    <div class="dob">
+                        <input type="date" id="birthday" name="birthday" required><br>
                     </div>
 
                     <div class="form">
-                        <label for="dob">Date of Birth*</label><br>
-                        <input type="text" id="dob" name="dob"><br>
+                        <input type="text" id="email" name="email" placeholder="Email Address*"><br>
                     </div>
 
                     <div class="form">
-                        <label for="email">Email Address*</label><br>
-                        <input type="text" id="email" name="email"><br>
+                        <input type="text" id="homeurl" name="homeurl" placeholder="Homepage URL*"><br>
                     </div>
 
                     <div class="form">
-                        <label for="homeurl">Homepag URL*</label><br>
-                        <input type="text" id="homeurl" name="homeurl"><br>
-                    </div>
-
-                    <div class="form">
-                        <label for="favouritecolors">Favourite Colors*</label><br>
-                        <input type="text" id="favouritecolors" name="favouritecolors"><br>
+                        <input type="text" id="favouritecolors" name="favouritecolors"
+                            placeholder="Favourite Colors*"><br>
                     </div>
 
                     <div class="form full-form">
-                        <label for="bio">Bio/Self Introduction*</label><br>
-                        <input type="text" id="bio" name="bio"><br>
+                        <input type="text" id="bio" name="bio" placeholder="Bio/Self Introduction*"><br>
                     </div>
                 </div>
             </form>
@@ -70,7 +64,7 @@
                 <p>By clicking the Submit button you agree to our Privacy Policy Terms</p>
             </div>
             <div class="rightside">
-                <button>Next →</button>
+                <button type="button" onclick="alert('Register Successful!')">Next →</button>
             </div>
         </div>
 

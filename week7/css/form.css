@@ -67,19 +67,38 @@
      padding: 8px 20px;
      border: 1.5px solid #eaeaec;
      border-radius: 30px;
-     font-size: 12px;
+     font-size: 11px;
      font-weight: 200;
      color: #a2a2a5;
  }
 
  .form input {
      width: 100%;
-     font-size: 14px;
+     font-size: 13px;
      border: none;
+ }
+
+ .dob {
+     padding: 8px 20px;
+     border: 1.5px solid #eaeaec;
+     border-radius: 30px;
+     font-size: 11px;
+     font-weight: 200;
+ }
+
+ .dob input {
+     width: 100%;
+     font-size: 12px;
+     border: none;
+     color: #8e8e91;
  }
 
  .full-form {
      grid-column: span 2;
+ }
+
+ input:focus {
+     outline: none;
  }
 
  .bottom {
