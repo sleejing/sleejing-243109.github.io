@@ -75,13 +75,62 @@ body {
     display: block;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 @media (max-width: 1350px) {
     .hamburger2 img {
         display: block;
     }
 
     .right-nav a {
+        display: block;
+    }
+
+    .right-nav button {
+        display: flex;
+    }
+}
+
+@media (max-width: 1250px) {
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        z-index: 1001;
+    }
+
+    .right-nav {
         display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #eef3f0;
+        padding-top: 50px;
+        gap: 30px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .right-nav.active {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu .submenu {
+        display: none;
+        position: relative;
+        background-color: rgb(238, 238, 238);
+        border: 1px solid #111;
+        border-radius: 8px;
     }
 
     .right-nav button {

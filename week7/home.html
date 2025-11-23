@@ -17,18 +17,24 @@
 <body>
     <div class="boss">
         <div class="navbar">
-            <div class="positivus"><a href="menu.html"><img src="images/Positivus.png" alt="positivuslogo"></a></div>
-            <div class="right-nav">
+            <div class="positivus"><a href="menu.html"><img src="images/Positivus.png" alt="positivuslogo"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav class="right-nav" id="mobile-menu">
                 <div class="menu">
-                    <div class="active"><a href="#">About us</a>
+                    <div class="active">
+                        <a href="#">About us</a>
                         <div class="submenu">
                             <a href="#">Our Journey</a>
-                            <a href="#">Our Inpect in Number</a>
+                            <a href="#">Our Inspect in Number</a>
                         </div>
                     </div>
                     <a href="#">Services</a>
-                    <div class="active"><a href="usecase.html" target="_blank">Use Cases</a></div>
-                    <div class="active"><a href="#">Pricing</a>
+                    <div class="active">
+                        <a href="usecase.html" target="_blank">Use Cases</a>
+                    </div>
+                    <div class="active">
+                        <a href="#">Pricing</a>
                         <div class="submenu">
                             <a href="#">Basic Plan</a>
                             <a href="#">Pro Plan</a>
@@ -38,10 +44,7 @@
                     <a href="#">Blog</a>
                 </div>
                 <div class="nav-button"><button>Request a quote</button></div>
-                <div class="hamburger2">
-                    <img src="images/hamburger2.png" alt="hamburger">
-                </div>
-            </div>
+            </nav>
         </div>
     </div>
 
@@ -68,6 +71,23 @@
         <div class="netflix"><img src="images/netflix5.png" alt="netflix"></div>
         <div class="zoom"><img src="images/zoom6.png" alt="zoom"></div>
     </div>
+    </div>
+
+    <script>
+        toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;";
+            } else {
+                toggleButton.innerHTML = "&#9776;";
+            }
+        });
+    </script>
 
 </body>
 
