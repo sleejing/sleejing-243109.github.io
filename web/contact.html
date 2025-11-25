@@ -4,11 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            margin: 0px;
+            font-family: "Inter", sans-serif;
+            background-color: #840b0b;
+        }
+
+        body a {
+            text-decoration: none;
+            color: #251E1E;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            background-color: #f6f6f6;
+            padding: 15px 30px;
+        }
+
+        .header-middle {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .header-middle div {
+            width: calc(100/2);
+        }
+
+        .menu {
+            display: flex;
+            gap: 50px;
+        }
+
+        .about,
+        .services,
+        .artist,
+        .blog,
+        .store,
+        .contact {
+            gap: 2px;
+            display: flex;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .submenu {
+            background-color: #B30E16;
+            display: none;
+            position: absolute;
+            top: 25px;
+            width: 200px;
+            border-radius: 16px;
+            padding: 10px;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 5px;
+            color: rgb(255, 255, 255);
+        }
+
+        .use:hover .submenu,
+        .services:hover .submenu,
+        .about:hover .submenu,
+        .artist:hover .submenu,
+        .blog:hover .submenu,
+        .store:hover .submenu {
+            display: block;
+        }
+
+        .submenu:hover {
+            display: block;
+        }
+
+        .submenu a:hover {
+            background-color: #980d14;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .contact-us a {
+            text-decoration: none;
+            background-color: #251E1E;
+            border-radius: 20px;
+            padding: 10px 25px;
+            color: #f6f6f6;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-left"><img class="logo" src="image/logo.png" alt=""></div>
+        <div class="header-middle">
+            <div class="menu">
+                <div class="about">
+                    <a href="#">About</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                    <div class="submenu">
+                        <a href="#">Our Impact in Numbers</a>
+                        <a href="#">Our Journey</a>
+                        <a href="#">Core Values</a>
+                    </div>
+                </div>
+                <div class="services">
+                    <a href="#">Services</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                    <div class="submenu">
+                        <a href="#">Our Impact in Numbers</a>
+                        <a href="#">Our Journey</a>
+                        <a href="#">Core Values</a>
+                    </div>
+                </div>
+                <div class="artist">
+                    <a href="#">Artist</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                    <div class="submenu">
+                        <a href="#">Our Impact in Numbers</a>
+                        <a href="#">Our Journey</a>
+                        <a href="#">Core Values</a>
+                    </div>
+                </div>
+                <div class="blog">
+                    <a href="#">Blog</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                    <div class="submenu">
+                        <a href="#">Our Impact in Numbers</a>
+                        <a href="#">Our Journey</a>
+                        <a href="#">Core Values</a>
+                    </div>
+                </div>
+                <div class="store">
+                    <a href="#">Store</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                    <div class="submenu">
+                        <a href="#">Our Impact in Numbers</a>
+                        <a href="#">Our Journey</a>
+                        <a href="#">Core Values</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <a href="#">Contact</a>
+                    <div><img src="image/polygon 4.png" alt="polygon"></div>
+                </div>
+                <div class="contact-us">
+                    <a href="###">Contact us</a>
+                </div>
+            </div>
 
+        </div>
+    </div>
 </body>
 
 </html>
