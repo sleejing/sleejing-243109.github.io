@@ -11,14 +11,266 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            margin: 0px;
+            font-family: "Inter", sans-serif;
+            background-color: #46477f;
+        }
 
+        body a {
+            text-decoration: none;
+            color: #251E1E;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px 30px;
+
+        }
+
+        .header-middle {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 50px;
+            width: 100%;
+        }
+
+        .about,
+        .services,
+        .artist,
+        .blog,
+        .store,
+        .contact {
+            gap: 2px;
+            display: flex;
+            position: relative;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .submenu {
+            background-color: #251E1E;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            border-radius: 16px;
+            padding: 10px;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 5px;
+            color: rgb(255, 255, 255);
+        }
+
+        .services:hover .submenu,
+        .about:hover .submenu,
+        .artist:hover .submenu,
+        .blog:hover .submenu,
+        .store:hover .submenu {
+            display: block;
+        }
+
+        .submenu:hover {
+            display: block;
+        }
+
+        .submenu a:hover {
+            background-color: #f6f6f6;
+            display: block;
+            border-radius: 20px;
+            color: #251e1e;
+        }
+
+        .contact-us a {
+            text-decoration: none;
+            background-color: #251E1E;
+            border-radius: 20px;
+            padding: 10px 25px;
+            color: #f6f6f6;
+        }
+
+        .menu-toggle {
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+            z-index: 1001;
+        }
+
+        .footer {
+            padding: 15px 30px;
+            background-color: #f6f6f6;
+        }
+
+        .footer-left {
+            width: 30%;
+        }
+
+        .footer-right {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+
+        .address {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .address img {
+            height: 100%;
+        }
+
+        .address p {
+            margin: 0px;
+            padding: 22px 0px;
+        }
+
+        .footer-middle {
+            display: flex;
+            gap: 100px;
+        }
+
+        .footer-menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-sub {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: right;
+        }
+
+        .footer-bottom p {
+            margin: 0px;
+        }
+
+        .footer-menu .about,
+        .footer-menu .services,
+        .footer-menu .artist,
+        .footer-menu .blog,
+        .footer-menu .store,
+        .footer-menu-bottom .contact {
+            flex-direction: column;
+        }
+
+        .footer-menu .about>a,
+        .footer-menu .services>a,
+        .footer-menu .artist>a,
+        .footer-menu .blog>a,
+        .footer-menu .store>a,
+        .footer-menu-bottom .contact>a {
+            font-weight: bolder;
+        }
+
+        .mobile-footer {
+            display: none;
+            text-align: center;
+            background-color: #f6f6f6;
+            padding: 15px 30px;
+        }
+
+        .mobile-footer-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+
+        @media screen and (max-width: 1080px) {
+
+            .menu-toggle {
+                display: block;
+                z-index: 1001;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #ffffff;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                padding-top: 5rem;
+                text-align: center;
+                z-index: 1001;
+                font-size: 20px;
+                align-items: center;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .about,
+            .services,
+            .artist,
+            .blog,
+            .store,
+            .contact {
+                justify-content: center;
+                width: 100%;
+                position: relative;
+            }
+
+            .submenu {
+                position: absolute;
+                width: 100%;
+                top: 25px;
+                left: 0px;
+                padding: 10px 0px;
+                z-index: 1001;
+                background-color: #B30E16;
+                border-radius: 0px;
+            }
+
+            .submenu a:hover {
+                background-color: #980d14;
+                display: block;
+                border-radius: 20px;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .mobile-footer {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
         <div class="header-left"><img class="logo" src="image/logo.png" alt=""></div>
         <div class="header-middle">
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="about">
                     <a href="#">About</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
@@ -41,9 +293,8 @@
                     <a href="#">Artist</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
-                        <a href="#">Our Impact in Numbers</a>
-                        <a href="#">Our Journey</a>
-                        <a href="#">Core Values</a>
+                        <a href="#">JAY CHOU</a>
+                        <a href="#">TYLER,THE CREATOR</a>
                     </div>
                 </div>
                 <div class="blog">
@@ -66,7 +317,6 @@
                 </div>
                 <div class="contact">
                     <a href="#">Contact</a>
-                    <div><img src="image/polygon 4.png" alt="polygon"></div>
                 </div>
                 <div class="contact-us">
                     <a href="###">Contact us</a>
@@ -76,6 +326,112 @@
         </div>
     </div>
     <div class="content"></div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="logo">
+                <img class="logo" src="image/logo.png" alt="logo">
+            </div>
+            <h3>Pushing Music,Beyond Boundaries</h3>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-left">
+                <div class="map-address"><img class="map" src="image/Rectangle 3.png" alt="map">
+                    <div class="address"><img src="image/location.png" alt="location">
+                        <p>No. 1, Jalan SS 12/1A, Ss 12, 47500 Subang Jaya, Selangor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-menu">
+                    <div class="about">
+                        <a href="#">HOME</a>
+                        <div class="footer-sub">
+                            <a href="#">ABOUT</a>
+                            <a href="#">TEAM</a>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <a href="#">SERVICES</a>
+                        <div class="footer-sub">
+                            <a href="#">PORTFOLIO LISTENINGs</a>
+                            <a href="#">SINGLE PROJECT</a>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <a href="#">ARTIST</a>
+                        <div class="footer-sub">
+                            <a href="#">JAY CHOU</a>
+                            <a href="#">TYLER,THE CREATOR</a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="#">BLOG</a>
+                        <div class="footer-sub">
+                            <a href="#">NEWS</a>
+                            <a href="#">BLOG POST</a>
+                        </div>
+                    </div>
+                    <div class="store">
+                        <a href="#">STORE</a>
+                        <div class="footer-sub">
+                            <a href="#">PRODUCT</a>
+                            <a href="#">ALBUM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu-bottom">
+                    <div class="contact">
+                        <a href="#">CONTACT</a>
+                        <div class="footer-sub">
+                            <a href="#">CONTACT FORM</a>
+                        </div>
+                    </div>
+                </div>
+                <div><img class="socialmedia" src="image/socialmedia.png" alt=""></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Bagaimana Music. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="mobile-footer">
+        <img class="logo" src="image/logo.png" alt="logo">
+        <h3>Pushing Music,Beyond Boundaries</h3>
+        <div class="mobile-footer-menu">
+            <div><a href="#">HOME</a></div>
+            <div><a href="#">SERVICES</a>
+
+            </div>
+            <div><a href="#">ARTIST</a></div>
+            <div><a href="#">BLOG</a></div>
+            <div><a href="#">STORE</a></div>
+            <div><a href="#">CONTACT</a></div>
+        </div>
+        <div class="mobile-footer-socialmedia"><img src="image/socialmedia.png" alt=""></div>
+        <div>
+            <p>© 2025 Bagaimana Music. All rights reserved.</p>
+        </div>
+
+    </div>
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;";
+                document.body.style.overflow = 'hidden';
+            } else {
+                toggleButton.innerHTML = "&#9776;";
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
