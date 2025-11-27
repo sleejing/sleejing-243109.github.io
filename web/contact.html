@@ -12,106 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <style>
-        body {
-            margin: 0px;
-            font-family: "Inter", sans-serif;
-            background-color: #46477f;
-        }
-
-        body a {
-            text-decoration: none;
-            color: #251E1E;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #ffffff;
-            padding: 15px 30px;
-
-        }
-
-        .header-middle {
-            display: flex;
-            gap: 100px;
-            align-items: center;
-        }
-
-        .menu {
-            display: flex;
-            gap: 50px;
-            width: 100%;
-        }
-
-        .about,
-        .services,
-        .artist,
-        .blog,
-        .store,
-        .contact {
-            gap: 2px;
-            display: flex;
-            position: relative;
-        }
-
-        .logo {
-            width: 200px;
-        }
-
-        .submenu {
-            background-color: #251E1E;
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 200px;
-            border-radius: 16px;
-            padding: 10px;
-        }
-
-        .submenu a {
-            display: block;
-            padding: 5px;
-            color: rgb(255, 255, 255);
-        }
-
-        .services:hover .submenu,
-        .about:hover .submenu,
-        .artist:hover .submenu,
-        .blog:hover .submenu,
-        .store:hover .submenu {
-            display: block;
-        }
-
-        .submenu:hover {
-            display: block;
-        }
-
-        .submenu a:hover {
-            background-color: #f6f6f6;
-            display: block;
-            border-radius: 20px;
-            color: #251e1e;
-        }
-
-        .contact-us a {
-            text-decoration: none;
-            background-color: #251E1E;
-            border-radius: 20px;
-            padding: 10px 25px;
-            color: #f6f6f6;
-        }
-
-        .menu-toggle {
-            font-size: 2rem;
-            cursor: pointer;
-            display: none;
-            z-index: 1001;
-        }
-
         .footer {
             padding: 15px 30px;
-            background-color: #f6f6f6;
+            background-color: #f5f6f6;
+
         }
 
         .footer-left {
@@ -186,7 +90,7 @@
         .mobile-footer {
             display: none;
             text-align: center;
-            background-color: #f6f6f6;
+            background-color: #f5f6f6;
             padding: 15px 30px;
         }
 
@@ -201,60 +105,6 @@
 
 
         @media screen and (max-width: 1080px) {
-
-            .menu-toggle {
-                display: block;
-                z-index: 1001;
-            }
-
-            .menu {
-                display: none;
-                flex-direction: column;
-                background-color: #ffffff;
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 100%;
-                padding-top: 5rem;
-                text-align: center;
-                z-index: 1001;
-                font-size: 20px;
-                align-items: center;
-            }
-
-            .menu.active {
-                display: flex;
-            }
-
-            .about,
-            .services,
-            .artist,
-            .blog,
-            .store,
-            .contact {
-                justify-content: center;
-                width: 100%;
-                position: relative;
-            }
-
-            .submenu {
-                position: absolute;
-                width: 100%;
-                top: 25px;
-                left: 0px;
-                padding: 10px 0px;
-                z-index: 1001;
-                background-color: #B30E16;
-                border-radius: 0px;
-            }
-
-            .submenu a:hover {
-                background-color: #980d14;
-                display: block;
-                border-radius: 20px;
-            }
-
             .footer {
                 display: none;
             }
@@ -272,7 +122,7 @@
         <div class="header-middle">
             <div class="menu" id="menu">
                 <div class="about">
-                    <a href="#">About</a>
+                    <a href="#">ABOUT</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
                         <a href="#">Our Impact in Numbers</a>
@@ -281,7 +131,7 @@
                     </div>
                 </div>
                 <div class="services">
-                    <a href="#">Services</a>
+                    <a href="#">SERVICES</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
                         <a href="#">Our Impact in Numbers</a>
@@ -290,7 +140,7 @@
                     </div>
                 </div>
                 <div class="artist">
-                    <a href="#">Artist</a>
+                    <a href="#">ARTIST</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
                         <a href="#">JAY CHOU</a>
@@ -298,7 +148,7 @@
                     </div>
                 </div>
                 <div class="blog">
-                    <a href="#">Blog</a>
+                    <a href="#">BLOG</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
                         <a href="#">Our Impact in Numbers</a>
@@ -307,7 +157,7 @@
                     </div>
                 </div>
                 <div class="store">
-                    <a href="#">Store</a>
+                    <a href="#">STORE</a>
                     <div><img src="image/polygon 4.png" alt="polygon"></div>
                     <div class="submenu">
                         <a href="#">Our Impact in Numbers</a>
@@ -316,10 +166,10 @@
                     </div>
                 </div>
                 <div class="contact">
-                    <a href="#">Contact</a>
+                    <a href="#">CONTACT</a>
                 </div>
                 <div class="contact-us">
-                    <a href="###">Contact us</a>
+                    <a href="###">CONTACT US</a>
                 </div>
             </div>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>

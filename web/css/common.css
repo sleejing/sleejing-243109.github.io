@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    background-color: #060847;
+}
+
+body a {
+    text-decoration: none;
+    color: #251E1E;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f6f6;
+    padding: 15px 30px;
+
+}
+
+.header-middle {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.menu .about,
+.menu .services,
+.artist,
+.blog,
+.store,
+.contact {
+    gap: 2px;
+    display: flex;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+}
+
+.submenu {
+    background-color: #251E1E;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px;
+    color: #f5f6f6;
+}
+
+.services:hover .submenu,
+.about:hover .submenu,
+.artist:hover .submenu,
+.blog:hover .submenu,
+.store:hover .submenu {
+    display: block;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #f5f6f6;
+    display: block;
+    border-radius: 20px;
+    color: #251e1e;
+}
+
+.contact-us a {
+    text-decoration: none;
+    background-color: #251E1E;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #f5f6f6;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f5f6f6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 5rem;
+        text-align: center;
+        z-index: 1001;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .about,
+    .services,
+    .artist,
+    .blog,
+    .store,
+    .contact {
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .submenu {
+        position: absolute;
+        width: 100%;
+        top: 25px;
+        left: 0px;
+        padding: 10px 0px;
+        z-index: 1001;
+        background-color: #251E1E;
+        border-radius: 0px;
+    }
+
+    .submenu a:hover {
+        background-color: #f5f6f6;
+        display: block;
+        border-radius: 20px;
+    }
+}
