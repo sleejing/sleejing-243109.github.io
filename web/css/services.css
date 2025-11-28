@@ -14,3 +14,20 @@ body {
     display: block;
     object-fit: cover;
 }
+
+.bannercontent {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bannercontent {
+    color: #F8F6F6;
+    z-index: 1003;
+}
