@@ -3,6 +3,7 @@ body {
 }
 
 
+
 .banner {
     width: 100%;
     display: block;
@@ -31,6 +32,11 @@ body {
 .bannercontent {
     color: #F8F6F6;
     z-index: 1003;
+}
+
+.allcontent {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .firstcontent-middle h3 {
