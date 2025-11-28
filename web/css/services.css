@@ -41,3 +41,14 @@ body {
 p {
     color: #251E1E;
 }
+
+.contentbox-middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contentbox-middle img {
+    width: 100%;
+}
