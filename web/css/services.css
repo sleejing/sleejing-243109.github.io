@@ -2,6 +2,7 @@ body {
     background-color: white;
 }
 
+
 .banner {
     width: 100%;
     display: block;
@@ -18,7 +19,7 @@ body {
 .bannercontent {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -30,4 +31,13 @@ body {
 .bannercontent {
     color: #F8F6F6;
     z-index: 1003;
+}
+
+.firstcontent-middle h3 {
+    color: #B30E16;
+}
+
+.firstcontent-middle h2,
+p {
+    color: #251E1E;
 }
