@@ -178,9 +178,11 @@ body a {
     background-color: #f5f6f6;
 }
 
-.mobile-sub {
-    display: none;
+.mobile-menu {
+    position: relative;
+    width: 100%;
 }
+
 
 .mobile-footer-menu {
     display: flex;
@@ -192,13 +194,17 @@ body a {
 }
 
 .mobile-sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
     display: none;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 10px;
     gap: 10px;
     background-color: #251E1E;
-    padding: 15px;
+    padding: 10px 0px;
+    z-index: 999;
+    margin-top: 0;
 }
 
 .mobile-sub a {
