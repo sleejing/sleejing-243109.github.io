@@ -1,4 +1,16 @@
-.banner img {
+body {
+    background-color: white;
+}
+
+.banner {
     width: 100%;
     display: block;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
