@@ -11,7 +11,35 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
+    <style>
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
 
+        .banner {
+            position: relative;
+        }
+
+        .banner h1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .banner h1 {
+            color: #F8F6F6;
+            z-index: 1003;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,7 +96,15 @@
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+        <div class="banner">
+            <div class="bannerimage"><img src="image/contactbanner.png" alt="banner">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <div class="section1"></div>
+        <div class="section2"></div>
+    </div>
     <div class="footer">
         <div class="footer-top">
             <div class="logo">
