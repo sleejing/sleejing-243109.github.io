@@ -2,7 +2,6 @@ body {
     background-color: white;
 }
 
-
 .banner {
     width: 100%;
     display: block;
@@ -25,12 +24,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.bannercontent {
     color: #F8F6F6;
     z-index: 1003;
+}
+
+
+.allcontent {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .firstcontent-middle h3 {
@@ -43,12 +44,47 @@ p {
 }
 
 .contentbox-middle {
-    width: 100%;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
+}
+
+.contentbox-middle div {
+    position: relative;
 
 }
 
 .contentbox-middle img {
     width: 100%;
+    display: block;
+}
+
+.box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.box h3 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    padding: 5px 10px;
+    color: #F8F6F6;
+    z-index: 1006;
+
+}
+
+.box {
+    position: relative;
+}
+
+.btn {
+    bottom: 80px;
+    left: 30px;
+    background: white;
+    border-radius: 12px;
+    width: 23%;
+    height: auto;
+    text-align: center;
 }
