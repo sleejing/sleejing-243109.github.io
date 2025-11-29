@@ -24,13 +24,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.bannercontent {
     color: #F8F6F6;
     z-index: 1003;
 }
+
 
 .allcontent {
     margin-left: 40px;
@@ -62,13 +59,13 @@ p {
     display: block;
 }
 
-.box1 img {
+.box img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.box1 h3 {
+.box h3 {
     position: absolute;
     top: 15px;
     left: 20px;
