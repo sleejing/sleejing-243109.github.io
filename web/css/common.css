@@ -132,6 +132,8 @@ body a {
     justify-content: space-between;
     background-color: #f5f6f6;
     padding: 15px 30px;
+    position: relative;
+    z-index: 2001;
 
 }
 
@@ -291,6 +293,7 @@ body a {
 }
 
 .mobile-footer {
+    padding-top: 10px;
     display: none;
     text-align: center;
     background-color: #f5f6f6;
