@@ -2,8 +2,6 @@ body {
     background-color: white;
 }
 
-
-
 .banner {
     width: 100%;
     display: block;
@@ -49,13 +47,33 @@ p {
 }
 
 .contentbox-middle {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     gap: 10px;
+    justify-content: space-between;
+}
+
+.contentbox-middle div {
+    position: relative;
 
 }
 
 .contentbox-middle img {
     width: 100%;
+    display: block;
+}
+
+.box1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.box1 h3 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    padding: 5px 10px;
+    color: #F8F6F6;
+    z-index: 1006;
+
 }
