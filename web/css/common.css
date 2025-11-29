@@ -102,12 +102,6 @@ p {
     color: var(--white);
 }
 
-/* Hover variations */
-.btn-dark:hover,
-.btn-primary:hover,
-.btn-light:hover {
-    opacity: 0.85;
-}
 
 
 
