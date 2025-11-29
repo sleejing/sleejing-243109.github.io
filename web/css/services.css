@@ -74,3 +74,17 @@ p {
     z-index: 1006;
 
 }
+
+.box {
+    position: relative;
+}
+
+.btn {
+    bottom: 80px;
+    left: 30px;
+    background: white;
+    border-radius: 12px;
+    width: 23%;
+    height: auto;
+    text-align: center;
+}
